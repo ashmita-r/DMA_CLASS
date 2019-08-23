@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Implicit_Intent</string>
+    <string name="editText_uri">http://developer.android.com</string>
+    <string name="button_uri">Open Website</string>
+
+    <string name="editText_loc">Golden Gate Bridge</string>
+    <string name="button_loc">Open Location</string>
+
+    <string name="editText_share">\'Twas brillig and the slithy toves</string>
+    <string name="button_share">Share This Text</string>
+    <string name="share_text_with">Share This Text</string>
+</resources>

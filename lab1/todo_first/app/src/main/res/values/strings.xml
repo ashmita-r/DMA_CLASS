@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">todo_first</string>
+    <string name="button_label_previous">Previous</string>
+    <string name="button_label_next">Next</string>
+    <string name="initial_value">0</string>
+
+    <string-array name="tasks">
+        <item>wake up</item>
+        <item>tea</item>
+        <item>lunch</item>
+        <item>college</item>
+        <item>home</item>
+        <item>dinner</item>
+        <item>sleep</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>firstly wake up</item>
+        <item>then take a tea</item>
+        <item>after that go for lunch</item>
+        <item>attend college</item>
+        <item>return to home</item>
+        <item>have a dinner</item>
+        <item>Good Night</item>
+    </string-array>
+</resources>

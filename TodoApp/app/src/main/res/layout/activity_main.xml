@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    >
+    <android.support.v7.widget.Toolbar
+        android:background="@color/materialYellow"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="45dp">
+
+    </android.support.v7.widget.Toolbar>
 
     <!-- RecyclerView that is responsible for holding a listtaskEntrytask data -->
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbar"
         android:id="@+id/recyclerViewTasks"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,12 +24,17 @@
 
     <!-- Floating action button that launches AddTaskActivity when clicked -->
     <android.support.design.widget.FloatingActionButton
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:tint="@android:color/white"
+        app:rippleColor="@android:color/white"
+        android:backgroundTint="@color/materialYellow"
+        android:tint="@android:color/black"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-</FrameLayout>
+</RelativeLayout>

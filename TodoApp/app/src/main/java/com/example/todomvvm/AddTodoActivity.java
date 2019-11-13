@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.todomvvm.database.AppDatabase;
 import com.example.todomvvm.database.Todo;
@@ -125,7 +126,6 @@ public class AddTodoActivity extends AppCompatActivity {
         int priority = getPriorityFromViews();
         Date date = new Date();
 
-        // TODO (4) Make todo final so it is visible inside the run method
        final  Todo todo = new Todo(description, priority, date);
        AppExecutors.getInstance().diskIO().execute(new Runnable() {
            @Override
@@ -138,9 +138,8 @@ public class AddTodoActivity extends AppCompatActivity {
                }
            }
        });
-        // TODO (2) Get the diskIO Executor from the instance of AppExecutors and
-        // call the diskIO execute method with a new Runnable and implement its run method
-        // TODO (3) Move the remaining logic inside the run method
+
+        Toast.makeText(getApplicationContext(),"Todo Added Successfully!!",Toast.LENGTH_SHORT).show();
 
         finish();
     }

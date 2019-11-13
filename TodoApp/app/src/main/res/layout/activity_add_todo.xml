@@ -58,7 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/materialOrange"
+            android:background="@color/materialYellow"
             android:text="@string/med_priority"
             android:theme="@style/WhiteRadioButton" />
 
@@ -67,7 +67,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/materialYellow"
+            android:background="@color/main_green_color"
             android:text="@string/low_priority"
             android:theme="@style/WhiteRadioButton" />
 
@@ -80,8 +80,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/materialYellow"
         android:text="@string/add_button"
-        android:textColor="@android:color/primary_text_dark" />
+        android:textColor="@color/button_text_color" />
 
 </LinearLayout>

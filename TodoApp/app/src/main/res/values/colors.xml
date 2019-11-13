@@ -7,6 +7,8 @@
     <color name="colorPrimaryLight">#C5CAE9</color>
     <color name="colorAccent">#303F9F</color>
 
+    <color name="changeThemeColor">#8BC34A</color>
+
     <!-- colors todo priority selection -->
     <color name="materialRed">#E74C3C</color>
     <color name="materialOrange">#E67E22</color>
